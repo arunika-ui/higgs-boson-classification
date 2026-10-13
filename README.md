@@ -64,6 +64,11 @@ Portal ([DOI:10.7483/OPENDATA.ATLAS.ZBP2.M5T8](https://doi.org/10.7483/OPENDATA.
 _Test set: 450,000 held-out events (the challenge's private leaderboard split)._
 <!-- RESULTS:END -->
 
+**What this means.** XGBoost reaches an AMS of **3.59** on 450,000 events it never saw, selecting the most
+signal-like 15.5% of events. For context, the winning entry of the original 2014 challenge, out of 1,785
+teams, scored 3.81 with a large ensemble of neural networks. The linear baseline stalls at 2.0, which shows
+how much of the signal lies in non-linear interactions between features.
+
 | ROC curve | AMS vs. selection threshold |
 | --- | --- |
 | ![ROC](results/roc.png) | ![AMS](results/ams.png) |
