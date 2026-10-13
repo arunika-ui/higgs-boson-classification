@@ -1,0 +1,40 @@
+{
+  "dataset": {
+    "train": {
+      "events": 250000,
+      "signal_fraction": 0.3427
+    },
+    "val": {
+      "events": 100000,
+      "signal_fraction": 0.3402
+    },
+    "test": {
+      "events": 450000,
+      "signal_fraction": 0.3415
+    }
+  },
+  "models": {
+    "Logistic Regression": {
+      "test_auc": 0.8168,
+      "test_ams": 2.006,
+      "val_ams": 2.005,
+      "selected_fraction": 0.34,
+      "train_seconds": 3.3
+    },
+    "Neural Network (MLP)": {
+      "test_auc": 0.9107,
+      "test_ams": 3.472,
+      "val_ams": 3.496,
+      "selected_fraction": 0.175,
+      "train_seconds": 40.1
+    },
+    "XGBoost": {
+      "test_auc": 0.9131,
+      "test_ams": 3.593,
+      "val_ams": 3.534,
+      "selected_fraction": 0.155,
+      "train_seconds": 9.6
+    }
+  },
+  "best_model": "XGBoost"
+}
